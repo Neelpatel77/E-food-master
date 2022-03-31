@@ -1,0 +1,213 @@
+<html>
+
+<head>
+    <title>Registration Form</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+    <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            background-color: white;
+        }
+
+        .bg {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+            background: url('images/signup_bg.jpg');
+            height: 90vh;
+            background-size: 1440px auto;
+            background-repeat: no-repeat;
+            z-index: 1;
+            position: relative;
+            top: 93px;
+        }
+
+        form {
+            width: 60%;
+            margin: 10px;
+            background-color: #ffffff;
+            border: 1px solid black;
+            opacity: 0.8;
+            filter: alpha(opacity=90);
+        }
+
+        form p {
+            margin: 5%;
+            font-weight: bold;
+            color: black;
+            font-size: 15px;
+        }
+
+
+        input[type="text"] {
+            font-size: 15px;
+        }
+
+
+        input[type="email"] {
+            font-size: 15px;
+        }
+
+        input[type="password"] {
+            font-size: 15px;
+        }
+
+        #section4 {
+            position: relative;
+            top: 15vh;
+        }
+
+        #mr {
+            margin-top: -20px;
+        }
+
+        #mm {
+            margin-top: 10px;
+        }
+
+        @media screen and (max-width: 500px) {}
+    </style>
+    <script>
+        $(function () {
+            $("#datepicker-1").datepicker();
+        });  
+    </script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top" style="padding:25px;">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" id="mr" href="index.html">
+                    <h1>e-<span style="color:green;">Food</span></h1>
+                </a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav  navbar-nav" id="mm" style="font-size:20px">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#Steps">Steps</a></li>
+                    <li><a href="#Reviews">Reviews</a></li>
+                    <li><a href="#section4">About Us</a></li>
+                    <li>
+                        <div class="dropdown" style="padding-top:10px" ;="">
+                            <span class="glyphicon glyphicon-map-marker"></span>
+                            <button class="btn btn-link" type="button" data-toggle="dropdown"
+                                style="font-size:20px; text-decoration: none;">Choose your location
+                                <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                                <li><a href="loc1.html">Andheri</a></li>
+                                <li><a href="loc2.html">Bandra</a></li>
+                                <li><a href="loc3.html">Borivali</a></li>
+                                <li><a href="loc4.html">Kandivali</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+    <center>
+        <div class="bg">
+
+            <form class="cmxform" id="commentForm" method="get" action="">
+                <fieldset>
+                    <h2>L O G I N </h2>
+
+                    <p>
+                        <label for="name">Username</label>
+                        <input id="name" name="Name" minlength="3" type="text" placeholder="Enter Username" required="">
+                    </p>
+
+
+
+                    <p>
+                        <label for="password">Password<span> </span></label>
+                        <input id="password" class="" form-control="" password-lg"="" name="Password" minlength="5"
+                            type="password" placeholder="Enter password" required="">
+                    </p>
+
+                    <center>
+                        <p>
+                            <button type="submit" class="btn btn-success">Submit</button>
+                        </p>
+                    </center>
+
+                </fieldset>
+            </form>
+        </div>
+        <div id="section4" class="container-fluid">
+            <h1>e-<span style="color:green;">Food</span></h1>
+            <div id="contact" class="container">
+                <div class="row">
+                    <hr>
+                    <div class="col-md-4">
+                        <p>Any questions? Feel free to contact us!</p>
+                        <p><span class="glyphicon glyphicon-map-marker"></span>Mumbai, India</p>
+                        <p><span class="glyphicon glyphicon-phone"></span>Phone: +9029992209</p>
+                        <p><span class="glyphicon glyphicon-envelope"></span>Email: efood@gmail.com</p>
+                    </div>
+                    <div class="col-md-4">
+                        <p>About e-Food</p>
+                        <p>Become a Delivery Partner</p>
+                        <p>Become a Restaurant Partner</p>
+                    </div>
+                    <div class="col-md-4">
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;Help</p>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;FAQs</p>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;Blog</p>
+                    </div>
+                </div>
+                <hr>
+                <center>
+                    <img alt="Download on the App Store" width="130px" height="39px" src="images/astore.png"
+                        data-reactid="175">
+                    <img alt="Get it on Google Play" width="130px" height="39px" src="images/gplay.png">
+                </center>
+            </div>
+            <hr>
+            <footer class="text-center">
+                <a class="up-arrow" href="#" data-toggle="tooltip" title="TO TOP">
+                    <span class="glyphicon glyphicon-chevron-up"></span>
+                </a><br><br>
+            </footer>
+        </div>
+        <script>
+            $().ready(function () {
+                $("#commentForm").validate();
+            });
+        </script>
+
+
+
+    </center>
+</body>
+
+</html>
